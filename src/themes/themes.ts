@@ -32,7 +32,7 @@ export const darkMode = {
     statusbar: "light-content",
     buttonLogOutColor: "#949494",
     dropDownBackgroundColor: "#2A2D3E",
-    closeButtonColor: "#5c5c5c",
+    closeButtonColor: "#707070",
     errorMessageColor: "#9e0b13"
   }
 
