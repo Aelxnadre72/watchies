@@ -73,9 +73,13 @@ Then continue through the remaining steps.
 ### APK
 If you have an android phone and would like to try out the app without the expo app, you can download the apk and install it on your phone from here:
 ```bash
-https://expo.dev/artifacts/eas/ojdsm2wQjWEZ56nfkvsB1H.apk
+https://expo.dev/artifacts/eas/6uBVf2RGLnzQNEJEhoCGKc.apk
 ```
-
+#### Build apk
+```bash
+yarn eas build -p android --profile preview
+```
+"Preview" is just the label for this apk build. Can be changed to something else like "development".
 
 ## About Watchies 
 Watchies is a React Native application. The main functionality of the application is to search through a database consisting of 37000 movies. You are also able to filter and sort the movies, and add movies to the user's favorites list. 
