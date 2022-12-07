@@ -6,5 +6,6 @@ export const refreshed = atom({
   default: {
     hasRefreshed: true,
     refresh: true,
+    refreshFavorite: true,
   },
 });

@@ -61,7 +61,7 @@ const Movies = ({navigation}: MoviesProps) => {
             navigation.navigate("Login");
         }
         else {
-            setRefresh({hasRefreshed: false, refresh: false});
+            setRefresh({hasRefreshed: false, refresh: false, refreshFavorite: true});
         }
     }
 

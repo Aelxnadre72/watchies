@@ -60,7 +60,7 @@ const Navigation = () => {
             />
             <Tab.Screen 
               options={{
-                unmountOnBlur: false,
+                unmountOnBlur: refresh.refreshFavorite,
 
                 tabBarIcon: () => {
                   return (

@@ -52,7 +52,7 @@ const Login = ({navigation}: LoginProps) => {
   const handleCloseYes = () => {
     setShowAccountState({show: false});
     setModal({movie: initialMovieState, openModal: false});
-    setRefresh({hasRefreshed: false, refresh: true});
+    setRefresh({hasRefreshed: false, refresh: true, refreshFavorite: false});
     setOpen(false);
     AsyncStorage.setItem("active", "false");
     setActive(false);
@@ -84,7 +84,7 @@ const Login = ({navigation}: LoginProps) => {
       const activeValue = await AsyncStorage.getItem("active");
       setActive(activeValue === "true");
       if(refresh.hasRefreshed && activeValue === "true") { //if refreshed app while still logged in
-        setRefresh({hasRefreshed: true, refresh: true});
+        setRefresh({hasRefreshed: true, refresh: true, refreshFavorite: true});
         navigation.navigate("Movies");
       }
       else if(activeValue === "true") {
@@ -150,7 +150,7 @@ const Login = ({navigation}: LoginProps) => {
           addUser(email.toLowerCase().trim(), password);
           AsyncStorage.setItem("email", email.toLowerCase().trim());
           AsyncStorage.setItem("active", "true");
-          setRefresh({hasRefreshed: true, refresh: true});
+          setRefresh({hasRefreshed: true, refresh: true, refreshFavorite: true});
           navigation.navigate('Movies');
         } 
         else {
@@ -167,7 +167,7 @@ const Login = ({navigation}: LoginProps) => {
         AsyncStorage.setItem("email", email.toLowerCase().trim());
         AsyncStorage.setItem("active", "true");
         setErrorMessage(false);
-        setRefresh({hasRefreshed: true, refresh: true});
+        setRefresh({hasRefreshed: true, refresh: true, refreshFavorite: true});
         navigation.navigate('Movies');
       } 
       else {

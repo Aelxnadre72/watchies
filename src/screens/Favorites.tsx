@@ -39,7 +39,7 @@ const Favorites = ({navigation}: FavoritesProps) => {
             navigation.navigate("Login");
         }
         else {
-            setRefresh({hasRefreshed: false, refresh: false});
+            setRefresh({hasRefreshed: false, refresh: false, refreshFavorite: false});
         }
     };
 
