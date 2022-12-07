@@ -73,7 +73,7 @@ Then continue through the remaining steps.
 ### APK
 If you have an android phone and would like to try out the app without the expo app, you can download the apk and install it on your phone from here:
 ```bash
-https://expo.dev/artifacts/eas/6uBVf2RGLnzQNEJEhoCGKc.apk
+https://expo.dev/artifacts/eas/keWZTnM2wXTFqwb19UDLzH.apk
 ```
 #### Build apk
 ```bash
